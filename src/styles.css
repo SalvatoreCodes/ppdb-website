@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary: #864af9;
+  --primary-paragraph: #462782;
+  --secondary: #faf14b;
+  --secondary-paragraph: #807a2b;
+  --white: #f9f6ff;
+  --black: #07040c;
+  --paragraph: #807d85;
+}
+
+body {
+  background-color: var(--white);
+  height: 200vh;
+  overflow-x: hidden;
+}
+
+.card {
+  height: 256px;
+  width: 428px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 32px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  background-image: linear-gradient(130deg, hsl(260, 54%, 33%) 0%, hsl(260, 54%, 41%) 27%, hsl(261, 54%, 48%) 71%, hsl(261, 68%, 56%) 92%, hsl(261, 94%, 63%) 100%);
+  padding: 8px;
+}
+.card .card--image {
+  height: 100%;
+  width: 50%;
+}
+.card .card--image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+.hero {
+  background: linear-gradient(rgba(134, 72, 249, 0.75) 70%, var(--white)), url("./assets/images/hero-background.avif") no-repeat center center/cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.hero .hero--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+}
+.hero .hero--text img {
+  height: 50%;
+}
+.hero .hero--text h1 {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  font-size: 5rem;
+}
+.hero .hero--text p {
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.hero .hero--bottom--transition {
+  position: absolute;
+  bottom: 0;
+  width: 275%;
+}
+
+.programs {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 32px;
+}
+.programs .programs--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.programs .programs--header p {
+  font-size: 1.5rem;
+}
+.programs .programs--header .programs--header--underline {
+  height: 2px;
+  width: 64px;
+  background-color: var(--secondary);
+}/*# sourceMappingURL=styles.css.map */
