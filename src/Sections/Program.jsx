@@ -9,6 +9,13 @@ function Programs() {
         <div className="programs--header--underline"></div>
       </div>
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }
