@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Components/Card";
+import { programKeahlian } from "../data";
 
 function Programs() {
   return (
@@ -8,14 +9,9 @@ function Programs() {
         <p>Program keahlian kami</p>
         <div className="programs--header--underline"></div>
       </div>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {programKeahlian.map((data) => (
+        <Card key={data.id} progLi={data.progLi} />
+      ))}
     </div>
   );
 }

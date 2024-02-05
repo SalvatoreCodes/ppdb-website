@@ -14,7 +14,7 @@
   --secondary-paragraph: #807a2b;
   --white: #f9f6ff;
   --black: #07040c;
-  --paragraph: #807d85;
+  --paragraph: #edeaf3;
 }
 
 body {
@@ -32,6 +32,8 @@ body {
   background-image: linear-gradient(130deg, hsl(260, 54%, 33%) 0%, hsl(260, 54%, 41%) 27%, hsl(261, 54%, 48%) 71%, hsl(261, 68%, 56%) 92%, hsl(261, 94%, 63%) 100%);
   padding: 8px;
   overflow: hidden;
+  display: flex;
+  gap: 16px;
 }
 .card .card--image {
   height: 100%;
@@ -44,9 +46,17 @@ body {
      object-fit: cover;
   border-radius: 16px;
 }
+.card .card--information .card--information--title h1 {
+  color: white;
+}
 
 .card:hover {
   scale: 1.1;
+}
+
+.indent {
+  margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .hero {
@@ -129,19 +139,83 @@ body {
 
 .location {
   background-color: var(--primary);
-  height: 50vh;
 }
-.location iframe {
+.location .location--content {
+  height: 64vh;
   width: 100%;
-  height: 100%;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.location .location--content iframe {
+  width: 100%;
   height: 75%;
   border: none;
   overflow: hidden;
-  filter: invert(100%);
+  border-radius: 48px;
+}
+.location .location--content .location--content--description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75%;
+  text-align: center;
+}
+.location .location--content .location--content--description h1 {
+  color: var(--white);
+}
+.location .location--content .location--content--description p {
+  color: var(--paragraph);
 }
 
 .footer {
   background-color: var(--black);
-  height: 50vh;
+}
+.footer .footer--information {
+  padding: 32px;
+}
+.footer .footer--information .footer--contacts {
+  color: var(--secondary);
+}
+.footer .footer--information .footer--contacts .divider {
+  height: 1px;
+  width: 75%;
+  background-color: var(--secondary);
+  margin: 16px 0;
+}
+.footer .footer--information .footer--programs {
+  color: var(--secondary);
+}
+.footer .footer--information .footer--programs ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8px;
+  list-style: none;
+}
+.footer .footer--information .footer--programs a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.footer .footer--information .footer--programs a:hover {
+  color: var(--secondary-paragraph);
+}
+.footer .footer--information .footer--programs .divider {
+  height: 1px;
+  width: 75%;
+  background-color: var(--secondary);
+  margin: 16px 0;
+}
+.footer .footer--information .footer--developer {
+  color: var(--paragraph);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero--bottom--transition {
+    width: 200%;
+  }
+  .location iframe {
+    width: 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */
