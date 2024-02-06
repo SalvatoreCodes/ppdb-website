@@ -10,9 +10,18 @@ function Card(props) {
       <div className="card--information">
         <div className="card--information--title">
           <h1>{props.progLi}</h1>
+          <h6>{props.progLiFull}</h6>
         </div>
-        <div className="card--information--details"></div>
-        <div className="card--information--details"></div>
+        <div className="card--information--details">
+          <p>{props.information}</p>
+        </div>
+        <div className="card--information--specialties">
+          <ul>
+            {props.specialties.map((data, index) => (
+              <li key={index}>{data}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

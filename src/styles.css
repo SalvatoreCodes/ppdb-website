@@ -32,12 +32,13 @@ body {
   background-image: linear-gradient(130deg, hsl(260, 54%, 33%) 0%, hsl(260, 54%, 41%) 27%, hsl(261, 54%, 48%) 71%, hsl(261, 68%, 56%) 92%, hsl(261, 94%, 63%) 100%);
   padding: 8px;
   overflow: hidden;
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 .card .card--image {
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 .card .card--image img {
   height: 100%;
@@ -46,8 +47,34 @@ body {
      object-fit: cover;
   border-radius: 16px;
 }
+.card .card--information {
+  height: 100%;
+  width: 100%;
+}
 .card .card--information .card--information--title h1 {
-  color: white;
+  color: var(--white);
+}
+.card .card--information .card--information--title h6 {
+  color: var(--white);
+  font-size: 75%;
+}
+.card .card--information .card--information--details {
+  color: var(--paragraph);
+  text-align: justify;
+  margin-top: 4px;
+}
+.card .card--information .card--information--specialties ul {
+  display: flex;
+  color: var(--secondary);
+  list-style: none;
+  gap: 4px;
+  font-weight: bold;
+  text-align: left;
+  filter: opacity(85%);
+}
+.card .card--information .card--information--specialties ul li:after {
+  content: "-";
+  padding-left: 4px;
 }
 
 .card:hover {
@@ -60,7 +87,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(134, 72, 249, 0.75) 70%, var(--white)), url("./assets/images/hero-background.avif") no-repeat center center/cover;
+  background: linear-gradient(rgba(134, 72, 249, 0.75) 70%, var(--white)), url("./assets/images/hero-background.jpeg") no-repeat center center/cover;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -102,6 +129,7 @@ body {
   color: var(--black);
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  margin-top: 16px;
 }
 .hero .hero--text button:hover {
   background: none;
@@ -209,6 +237,8 @@ body {
 }
 .footer .footer--information .footer--developer {
   color: var(--paragraph);
+  float: right;
+  filter: opacity(25%);
 }
 
 @media screen and (min-width: 768px) {

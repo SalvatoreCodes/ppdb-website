@@ -10,7 +10,13 @@ function Programs() {
         <div className="programs--header--underline"></div>
       </div>
       {programKeahlian.map((data) => (
-        <Card key={data.id} progLi={data.progLi} />
+        <Card
+          key={data.id}
+          progLi={data.progLi}
+          progLiFull={data.progLiFull}
+          information={data.information}
+          specialties={data.specialties}
+        />
       ))}
     </div>
   );

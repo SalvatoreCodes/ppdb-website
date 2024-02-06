@@ -39,12 +39,13 @@ body {
   );
   padding: 8px;
   overflow: hidden;
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 
   .card--image {
     height: 100%;
-    width: 50%;
+    width: 100%;
 
     img {
       height: 100%;
@@ -55,9 +56,36 @@ body {
   }
 
   .card--information {
+    height: 100%;
+    width: 100%;
     .card--information--title {
       h1 {
-        color: white;
+        color: var(--white);
+      }
+      h6 {
+        color: var(--white);
+        font-size: 75%;
+      }
+    }
+    .card--information--details {
+      color: var(--paragraph);
+      text-align: justify;
+      margin-top: 4px;
+    }
+    .card--information--specialties {
+      ul {
+        display: flex;
+        color: var(--secondary);
+        list-style: none;
+        gap: 4px;
+        font-weight: bold;
+        text-align: left;
+        filter: opacity(85%);
+
+        li:after {
+          content: "-";
+          padding-left: 4px;
+        }
       }
     }
   }
@@ -74,7 +102,7 @@ body {
 
 .hero {
   background: linear-gradient(rgba(134, 72, 249, 0.75) 70%, var(--white)),
-    url("./assets/images/hero-background.avif") no-repeat center center / cover;
+    url("./assets/images/hero-background.jpeg") no-repeat center center / cover;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -117,6 +145,7 @@ body {
       color: var(--black);
       cursor: pointer;
       transition: all 0.25s ease-in-out;
+      margin-top: 16px;
     }
 
     button:hover {
@@ -241,6 +270,8 @@ body {
 
     .footer--developer {
       color: var(--paragraph);
+      float: right;
+      filter: opacity(25%);
     }
   }
 }
