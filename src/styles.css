@@ -85,6 +85,9 @@ body {
   font-weight: bold;
   text-decoration: underline;
   margin-left: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .card .card--information .card--information--details a:hover {
   color: var(--secondary);
