@@ -125,10 +125,6 @@ body {
   }
 }
 
-.card:hover {
-  scale: 1.1;
-}
-
 .hero {
   background: linear-gradient(rgba(134, 72, 249, 0.75) 70%, var(--white)),
     url("./assets/images/hero-background.jpeg") no-repeat center center / cover;
