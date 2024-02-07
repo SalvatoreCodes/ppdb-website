@@ -28,7 +28,7 @@ body {
 }
 
 .card {
-  width: 428px;
+  max-width: 428px;
   border-radius: 16px;
   box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
