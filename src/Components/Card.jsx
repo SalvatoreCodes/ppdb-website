@@ -14,6 +14,7 @@ function Card(props) {
         </div>
         <div className="card--information--details">
           <p>{props.information}</p>
+          <a href="#">Read More</a>
         </div>
         <div className="card--information--specialties">
           <ul>

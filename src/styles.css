@@ -22,6 +22,11 @@ body {
   overflow-x: hidden;
 }
 
+.indent {
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
 .card {
   height: 256px;
   width: 428px;
@@ -50,6 +55,9 @@ body {
 .card .card--information {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .card .card--information .card--information--title h1 {
   color: var(--white);
@@ -62,6 +70,16 @@ body {
   color: var(--paragraph);
   text-align: justify;
   margin-top: 4px;
+}
+.card .card--information .card--information--details p {
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.card .card--information .card--information--details a {
+  color: var(--white);
+  font-weight: bold;
 }
 .card .card--information .card--information--specialties ul {
   display: flex;
@@ -79,11 +97,6 @@ body {
 
 .card:hover {
   scale: 1.1;
-}
-
-.indent {
-  margin-left: 16px;
-  margin-bottom: 8px;
 }
 
 .hero {
@@ -206,6 +219,7 @@ body {
 }
 .footer .footer--information .footer--contacts {
   color: var(--secondary);
+  filter: opacity(75%);
 }
 .footer .footer--information .footer--contacts .divider {
   height: 1px;
@@ -215,6 +229,7 @@ body {
 }
 .footer .footer--information .footer--programs {
   color: var(--secondary);
+  filter: opacity(75%);
 }
 .footer .footer--information .footer--programs ul {
   display: grid;

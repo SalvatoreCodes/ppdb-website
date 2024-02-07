@@ -10,6 +10,7 @@ export const programKeahlian = [
   {
     id: 2,
     progLi: "TJKT",
+    progLiFull: "Teknik Jaringan Komputer dan Komunikasi",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["Kabel", "Jaringan"],
@@ -17,6 +18,7 @@ export const programKeahlian = [
   {
     id: 3,
     progLi: "LK",
+    progLiFull: "Layanan Kesehatan",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["Kesehatan", "Caregiver"],
@@ -24,6 +26,7 @@ export const programKeahlian = [
   {
     id: 4,
     progLi: "TF",
+    progLiFull: "Teknologi Farmasi",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["Obat", "Sabong"],
@@ -38,6 +41,7 @@ export const programKeahlian = [
   {
     id: 6,
     progLi: "MPLB",
+    progLiFull: "Manajemen Perkantoran dan Layanan Bisnis",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["Kantor", "Word"],
@@ -45,6 +49,7 @@ export const programKeahlian = [
   {
     id: 7,
     progLi: "AKL",
+    progLiFull: "Akuntansi dan Keuangan Lembaga",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["DOI", "Uang"],
@@ -52,6 +57,7 @@ export const programKeahlian = [
   {
     id: 8,
     progLi: "ULP",
+    progLiFull: "Usaha Layanan Pariwisata",
     information:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla ultrices nunc. Aenean a odio quis tortor porta accumsan. Aenean semper elit a lectus porta, in rhoncus tellus pharetra. Nunc.",
     specialties: ["Travelling", "pariwisata"],
