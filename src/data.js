@@ -4,7 +4,7 @@ export const programKeahlian = [
     progLi: "PPLG",
     progLiFull: "Pengembangan Perangkat Lunak dan GIM",
     information:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus tempor enim ac aliquet. Proin auctor vehicula sagittis. Nulla risus tellus, sodales at est et, eleifend tincidunt dui. Cras vitae.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed efficitur lectus. Sed eleifend sodales nibh, sit amet finibus nulla lobortis ac. Nunc sit amet lobortis velit, non commodo libero. Sed eu sapien nec nulla tincidunt euismod. In hac habitasse platea dictumst. Proin eget augue hendrerit, hendrerit nisi sed, vehicula.",
     specialties: ["Developer", "3D"],
   },
   {

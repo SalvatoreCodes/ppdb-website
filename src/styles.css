@@ -28,15 +28,13 @@ body {
 }
 
 .card {
-  height: 256px;
   width: 428px;
   border-radius: 16px;
-  box-shadow: 0px 0px 32px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: all 0.25s ease-in-out;
   background-image: linear-gradient(130deg, hsl(260, 54%, 33%) 0%, hsl(260, 54%, 41%) 27%, hsl(261, 54%, 48%) 71%, hsl(261, 68%, 56%) 92%, hsl(261, 94%, 63%) 100%);
   padding: 8px;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
@@ -73,13 +71,23 @@ body {
 }
 .card .card--information .card--information--details p {
   -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
+}
+.card .card--information .card--information--details .card--information--details--default--size {
+  -webkit-box-orient: vertical;
+}
+.card .card--information .card--information--details .card--information--details--full--size {
+  -webkit-box-orient: none;
 }
 .card .card--information .card--information--details a {
   color: var(--white);
   font-weight: bold;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+.card .card--information .card--information--details a:hover {
+  color: var(--secondary);
 }
 .card .card--information .card--information--specialties ul {
   display: flex;
@@ -89,6 +97,7 @@ body {
   font-weight: bold;
   text-align: left;
   filter: opacity(85%);
+  margin-top: 32px;
 }
 .card .card--information .card--information--specialties ul li:after {
   content: "-";

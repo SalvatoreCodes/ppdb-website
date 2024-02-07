@@ -5,8 +5,6 @@ import Programs from "./Sections/Program";
 import Location from "./Sections/Location";
 import Footer from "./Sections/Footer";
 
-import CardFull from "./Components/CardFull";
-
 function App() {
   return (
     <div className="app">
@@ -14,8 +12,6 @@ function App() {
       <Programs />
       <Location />
       <Footer />
-
-      <CardFull />
     </div>
   );
 }
