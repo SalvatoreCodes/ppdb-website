@@ -61,6 +61,7 @@ body {
 }
 .card .card--information .card--information--title h1 {
   color: var(--white);
+  font-size: 1.5rem;
 }
 .card .card--information .card--information--title h6 {
   color: var(--secondary);
@@ -262,6 +263,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .card .card--information .card--information--title h1 {
+    font-size: 2.5rem;
+  }
   .hero .hero--bottom--transition {
     width: 200%;
   }
@@ -270,6 +274,9 @@ body {
   }
 }
 @media screen and (min-width: 1279px) {
+  .card .card--information .card--information--title h1 {
+    font-size: 2.5rem;
+  }
   .hero {
     display: flex;
     align-items: center;
