@@ -23,7 +23,7 @@ function Card(props) {
         <div className="card--information--details">
           {isTruncated ? (
             <>
-              {props.information.slice(0, 256)}
+              {props.information.slice(0, 225)}
               <span
                 onClick={toggleTruncate}
                 className="card--information--details--read--more"
