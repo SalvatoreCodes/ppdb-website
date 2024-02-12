@@ -33,7 +33,6 @@ function Programs() {
             progLi={data.progLi}
             progLiFull={data.progLiFull}
             information={data.information}
-            specialties={data.specialties}
           />
         ))}
       </div>

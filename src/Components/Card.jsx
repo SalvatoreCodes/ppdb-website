@@ -2,20 +2,13 @@ import React from "react";
 import noProfilePicture from "../assets/images/blank-profile-picture.webp";
 
 function Card(props) {
-  const [size, setSize] = React.useState(true);
-  let informationClass = "card--information--details--default--size";
+  const [isTruncated, setIsTruncated] = React.useState(true);
 
-  const clickHandler = () => {
-    setSize(!size);
-
-    if (size === true) {
-      informationClass = "card--information--details--default--size";
-    } else {
-      informationClass = "card--information--details--full--size";
-    }
+  const toggleTruncate = () => {
+    setIsTruncated(!isTruncated);
   };
 
-  React.useEffect(() => {}, [size, informationClass]);
+  React.useEffect(() => {}, []);
 
   return (
     <div className="card" key={props.id}>
@@ -28,15 +21,28 @@ function Card(props) {
           <h6>{props.progLiFull}</h6>
         </div>
         <div className="card--information--details">
-          <p className={informationClass}>{props.information}</p>
-          <a onClick={() => clickHandler()}>Read More</a>
-        </div>
-        <div className="card--information--specialties">
-          <ul>
-            {props.specialties.map((data, index) => (
-              <li key={index}>{data}</li>
-            ))}
-          </ul>
+          {isTruncated ? (
+            <>
+              {props.information.slice(0, 256)}
+              <span
+                onClick={toggleTruncate}
+                className="card--information--details--read--more"
+              >
+                Read more
+              </span>
+            </>
+          ) : (
+            <>
+              {props.information}
+              <span
+                onClick={toggleTruncate}
+                className="card--information--details--show--less"
+              >
+                {" "}
+                Show less
+              </span>
+            </>
+          )}
         </div>
       </div>
     </div>

@@ -28,10 +28,10 @@ body {
 }
 
 .card {
+  min-height: 312px;
   max-width: 428px;
   border-radius: 16px;
   box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   transition: all 0.25s ease-in-out;
   background-image: linear-gradient(130deg, hsl(260, 54%, 33%) 0%, hsl(260, 54%, 41%) 27%, hsl(261, 54%, 48%) 71%, hsl(261, 68%, 56%) 92%, hsl(261, 94%, 63%) 100%);
   padding: 8px;
@@ -43,7 +43,7 @@ body {
           user-select: none;
 }
 .card .card--image {
-  height: 100%;
+  max-height: 296px;
   width: 100%;
 }
 .card .card--image img {
@@ -58,56 +58,29 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .card .card--information .card--information--title h1 {
   color: var(--white);
 }
 .card .card--information .card--information--title h6 {
-  color: var(--white);
+  color: var(--secondary);
   font-size: 75%;
+  margin-bottom: 8px;
 }
 .card .card--information .card--information--details {
   color: var(--paragraph);
   text-align: justify;
   margin-top: 4px;
 }
-.card .card--information .card--information--details p {
-  -webkit-line-clamp: 6;
-  overflow: hidden;
-  display: -webkit-box;
-}
-.card .card--information .card--information--details .card--information--details--default--size {
-  -webkit-box-orient: vertical;
-}
-.card .card--information .card--information--details .card--information--details--full--size {
-  -webkit-box-orient: none;
-}
-.card .card--information .card--information--details a {
+.card .card--information .card--information--details span {
+  font-weight: bold;
   color: var(--white);
-  font-weight: bold;
-  text-decoration: underline;
   margin-left: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.card .card--information .card--information--details a:hover {
-  color: var(--secondary);
-}
-.card .card--information .card--information--specialties ul {
-  display: flex;
-  color: var(--secondary);
-  list-style: none;
-  gap: 4px;
-  font-weight: bold;
-  text-align: left;
-  filter: opacity(85%);
-  margin-top: 32px;
-}
-.card .card--information .card--information--specialties ul li:after {
-  content: "-";
-  padding-left: 4px;
+.card .card--information .card--information--details .card--information--details--show--less {
+  display: block;
 }
 
 .hero {
@@ -239,6 +212,9 @@ body {
 .location .location--content .location--content--description p {
   color: var(--paragraph);
 }
+.location .location--content .location--content--description h2 {
+  display: none;
+}
 
 .footer {
   background-color: var(--black);
@@ -328,14 +304,23 @@ body {
   .location .location--content {
     align-items: start;
     flex-direction: row;
+    padding: 32px 248px 0 248px;
   }
   .location .location--content iframe {
-    width: 75vw;
+    width: 100vw;
+    height: 100%;
   }
-  .location .location--content--description {
-    padding: 16px;
-    align-items: left;
-    text-align: left;
+  .location .location--content .location--content--description {
+    padding: 16px 32px;
     width: 100%;
+    align-items: start;
+    text-align: start;
+  }
+  .location .location--content .location--content--description p {
+    display: none;
+  }
+  .location .location--content .location--content--description h2 {
+    display: block;
+    color: var(--white);
   }
 }/*# sourceMappingURL=styles.css.map */

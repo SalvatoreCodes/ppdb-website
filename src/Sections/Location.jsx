@@ -14,7 +14,12 @@ function Location() {
         ></iframe>
         <div className="location--content--description">
           <h1>TOMOHON</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem Ipsum Dolor Sit Amet</p>
+          <h2>Lorem</h2>
+          <h2>Ipsum</h2>
+          <h2>Dolor</h2>
+          <h2>Sit</h2>
+          <h2>AMET</h2>
         </div>
       </div>
     </div>
