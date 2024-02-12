@@ -117,7 +117,6 @@ body {
   overflow: hidden;
 }
 .hero .hero--content {
-  max-width: 768px;
   margin-bottom: 248px;
 }
 .hero .hero--content .hero--content--text {
@@ -168,7 +167,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 275%;
-  height: 25vh;
+  height: 248px;
 }
 
 .programs {
@@ -284,4 +283,59 @@ body {
   color: var(--paragraph);
   float: right;
   filter: opacity(25%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero--bottom--transition {
+    width: 200%;
+  }
+  .programs .programs--video iframe {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .hero--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero--content .hero--content--text {
+    align-items: center;
+  }
+  .hero .hero--content .hero--content--text img {
+    height: 248px;
+  }
+  .hero .hero--content .hero--content--text h1 {
+    font-size: 10rem;
+    margin-bottom: 32px;
+  }
+  .hero .hero--bottom--transition {
+    display: none;
+  }
+  .programs .programs--video {
+    display: flex;
+    justify-content: center;
+  }
+  .programs .programs--video iframe {
+    height: 75vh;
+    width: 75vw;
+  }
+  .location .location--content {
+    align-items: start;
+    flex-direction: row;
+  }
+  .location .location--content iframe {
+    width: 75vw;
+  }
+  .location .location--content--description {
+    padding: 16px;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
