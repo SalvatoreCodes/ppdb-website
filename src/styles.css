@@ -61,7 +61,7 @@ body {
 }
 .card .card--information .card--information--title h1 {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 .card .card--information .card--information--title h6 {
   color: var(--secondary);
