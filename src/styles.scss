@@ -83,9 +83,12 @@ body {
       span {
         font-weight: bold;
         color: var(--white);
-        margin-left: 4px;
         text-decoration: underline;
         cursor: pointer;
+      }
+
+      .card--information--details--read--more {
+        margin-left: 8px;
       }
 
       .card--information--details--show--less {

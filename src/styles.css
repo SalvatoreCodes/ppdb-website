@@ -76,9 +76,11 @@ body {
 .card .card--information .card--information--details span {
   font-weight: bold;
   color: var(--white);
-  margin-left: 4px;
   text-decoration: underline;
   cursor: pointer;
+}
+.card .card--information .card--information--details .card--information--details--read--more {
+  margin-left: 8px;
 }
 .card .card--information .card--information--details .card--information--details--show--less {
   display: block;
