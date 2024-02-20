@@ -1,15 +1,28 @@
 import React from "react";
 import noProfilePicture from "../assets/images/blank-profile-picture.webp";
 
-function Card(props) {
-  const [isTruncated, setIsTruncated] = React.useState(true);
+export const CardFullscreen = (props) => {
+  return (
+    <div className="card--fullscreen">
+      <div className="card--fullscreen--container">
+        <button
+          className="card--fullscreen--close"
+          onClick={props.setFullscreen}
+        >
+          X
+        </button>
+        <div className="card--fullscreen--image">
+          <img src={noProfilePicture} alt="image" />
+        </div>
+        <div className="card--fullscreen--information">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-  const toggleTruncate = () => {
-    setIsTruncated(!isTruncated);
-  };
-
-  React.useEffect(() => {}, []);
-
+export const Card = (props) => {
   return (
     <div className="card" key={props.id}>
       <div className="card--image">
@@ -21,32 +34,10 @@ function Card(props) {
           <h6>{props.progLiFull}</h6>
         </div>
         <div className="card--information--details">
-          {isTruncated ? (
-            <>
-              {props.information.slice(0, 225)}
-              <span
-                onClick={toggleTruncate}
-                className="card--information--details--read--more"
-              >
-                Read more
-              </span>
-            </>
-          ) : (
-            <>
-              {props.information}
-              <span
-                onClick={toggleTruncate}
-                className="card--information--details--show--less"
-              >
-                {" "}
-                Show less
-              </span>
-            </>
-          )}
+          <p>{props.information}</p>
+          <button onClick={props.setFullscreen}>Read More</button>
         </div>
       </div>
     </div>
   );
-}
-
-export default Card;
+};

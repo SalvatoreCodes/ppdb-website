@@ -52,6 +52,6 @@ export const programKeahlian = [
     progLi: "ULP",
     progLiFull: "Usaha Layanan Pariwisata",
     information:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis, tellus non laoreet gravida, eros nulla vestibulum odio, ac scelerisque magna mauris ut quam. Donec pharetra nunc eu malesuada dapibus. Curabitur mollis dapibus auctor. Proin rhoncus varius tellus, vel aliquam enim posuere vitae. Nulla fermentum eget turpis non auctor. Praesent id quam a tellus vulputate fringilla. Proin mauris elit, lacinia eu tortor vitae, faucibus.",
+      "Memproduksi tamatan yang siap bekerja dan berwirausaha dalam bidang Pariwisata yang kompeten dalam menggunakan Microsoft Office, public speaking, bahasa asing, membuat paket wisata, melakukan reservasi tiket (pesawat udara, kapal laut dan hotel) memandu wisatawan serta membuat produk kreatif kuliner dan kerajinan tangan.",
   },
 ];

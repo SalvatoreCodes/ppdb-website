@@ -1,8 +1,16 @@
 import React from "react";
-import Card from "../Components/Card";
 import { programKeahlian } from "../data";
+import { Card, CardFullscreen } from "../Components/Card";
 
 function Programs() {
+  const [fullscreen, setFullscreen] = React.useState(false);
+
+  const fullscreenToggle = () => {
+    setFullscreen(!fullscreen);
+  };
+
+  React.useEffect(() => {}, [fullscreen]);
+
   const Video = () => {
     return (
       <div className="programs--video">
@@ -33,9 +41,11 @@ function Programs() {
             progLi={data.progLi}
             progLiFull={data.progLiFull}
             information={data.information}
+            setFullscreen={fullscreenToggle}
           />
         ))}
       </div>
+      {fullscreen ? <CardFullscreen setFullscreen={fullscreenToggle} /> : <></>}
     </div>
   );
 }

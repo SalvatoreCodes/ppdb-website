@@ -13,13 +13,16 @@ function Location() {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
         <div className="location--content--description">
-          <h1>TOMOHON</h1>
-          <p>Lorem Ipsum Dolor Sit Amet</p>
-          <h2>Lorem</h2>
-          <h2>Ipsum</h2>
-          <h2>Dolor</h2>
-          <h2>Sit</h2>
-          <h2>AMET</h2>
+          <h1>Lokasi Sekolah</h1>
+          <p>
+            Jl. Kampus, Talete Dua, Kec. Tomohon Tengah, Kota Tomohon, Sulawesi
+            Utara.
+          </p>
+          <h2>Jl. Kampus</h2>
+          <h2>Talete Dua</h2>
+          <h2>Kec. Tomohon Tengah</h2>
+          <h2>Kota Tomohon</h2>
+          <h2>Sulawesi Utara</h2>
         </div>
       </div>
     </div>
